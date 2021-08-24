@@ -1,0 +1,333 @@
+body {
+   /* background-image: url(../img/Distant\ Mountain.jpg);*/
+   background-color: #D35400 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*
+body{
+    background-color: #74a4b8;
+    background: linear-gradient(to right, #239ad1, #7df5ef);
+}*/
+
+.formulario {
+    background: #585756;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(15, 15, 15, 0.568);
+    color: white;
+}
+
+.form-control {
+    background: rgba(245, 245, 244, 0.993);
+    transition: 0.5s ease-in;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    color: rgb(14, 14, 13);
+    background: none;   
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: rgb(14, 14, 13);
+}
+
+.ingresar {
+    background: #1e1e1f;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: rgba(245, 238, 238, 0.973);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    transition: 0.5s ease-in;
+}
+
+.ingresar:hover {
+    color: rgb(86, 105, 165);
+}
+
+.olvide {
+    color: rgb(255, 255, 255);
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.olvide:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-style: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+.olvide1 {
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 700!important;
+    border: 2px solid white; 
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.olvide1:hover {
+    color: rgb(106, 132, 219);
+    text-decoration-style: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+
+/*clasificados*/
+h1 {
+	text-align: center;
+	padding: 12px;
+	color: rgb(17, 17, 17)
+}
+
+h2 {
+	text-align: center;
+	padding: 12px;
+	color: rgb(100, 30, 22 )
+}
+
+p {
+    line-height: 1.75;
+  }
+  
+  .text-faded {
+    color: #f6e1c5;
+  }
+  
+  .site-heading {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .site-heading .site-heading-upper {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .site-heading .site-heading-lower {
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 4rem;
+  }
+  
+  .page-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .section-heading {
+    text-transform: uppercase;
+  }
+  .section-heading .section-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .section-heading .section-heading-lower {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+  }
+  
+  .bg-faded {
+    background-color: #f6e1c5;
+  }
+  
+  .btn-xl {
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  #mainNav {
+    background-color: rgba(47, 23, 15, 0.9);
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  #mainNav .navbar-brand {
+    color: #e6a756;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 800;
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link {
+    color: #e6a756;
+  }
+  @media (min-width: 992px) {
+    #mainNav .navbar-nav .nav-item .nav-link {
+      font-size: 0.9rem;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link:hover {
+      color: rgba(255, 255, 255, 0.4);
+    }
+    #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+      color: #e6a756;
+    }
+  }
+  
+  .btn {
+    box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+  }
+  
+  @media (min-width: 992px) {
+    .about-heading .about-heading-img {
+      position: relative;
+      z-index: 0;
+    }
+    .about-heading .about-heading-content {
+      margin-top: -5rem;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  
+  .cta {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgba(230, 167, 86, 0.9);
+  }
+  .cta .cta-inner {
+    position: relative;
+    padding: 3rem;
+    margin: 0.5rem;
+  }
+  .cta .cta-inner:before {
+    border-radius: 0.5rem;
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    border: 0.25rem solid rgba(255, 255, 255, 0.85);
+    z-index: -1;
+  }
+  
+  .footer {
+    background-color: rgba(47, 23, 15, 0.9);
+  }
+  
+  .intro {
+    position: relative;
+  }
+  @media (min-width: 992px) {
+    .intro .intro-img {
+      width: 75%;
+      float: right;
+    }
+    .intro .intro-text {
+      left: 0;
+      width: 60%;
+      margin-top: 3rem;
+      position: absolute;
+    }
+    .intro .intro-text .intro-button {
+      width: 100%;
+      left: 0;
+      position: absolute;
+      bottom: -2rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    .intro .intro-text {
+      width: 45%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .product-item .product-item-title {
+      position: relative;
+      z-index: 1;
+      margin-bottom: -3rem;
+    }
+    .product-item .product-item-img {
+      position: relative;
+      z-index: 0;
+      max-width: 60vw;
+    }
+    .product-item .product-item-description {
+      position: relative;
+      z-index: 1;
+      margin-top: -3rem;
+      max-width: 50vw;
+    }
+  }
+  
+  .list-hours {
+    font-size: 0.9rem;
+  }
+  .list-hours .list-hours-item {
+    border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  .list-hours .list-hours-item.today {
+    font-weight: bold;
+    color: #e6a756;
+  }
+  @media (min-width: 992px) {
+    .list-hours {
+      width: 50%;
+      font-size: 1.1rem;
+    }
+  }
+  
+  .address strong {
+    font-size: 1.2rem;
+  }
+
+
+/*tablas*/
+h3{
+  margin-top: 10px;
+}
+.contenedor{
+  width: 90%;
+  margin: auto;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td{
+  padding: 10px;
+}
+th{
+  background-color: rgb(0, 0,0);
+  text-align: center;
+  color: #fff;
+}
+table tr:hover{
+/*  background-color: rgba(0, 0, 0, 0);*/
+  background: #3bc2f7;
+  opacity: 05;
+}
+.icono{
+  padding: 3px;
+  width: 30px;
+  cursor: pointer;
+}
+.img-media{
+  width: 150px;
+
+}
+

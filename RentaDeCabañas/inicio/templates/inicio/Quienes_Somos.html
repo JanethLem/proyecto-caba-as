@@ -1,0 +1,43 @@
+{% extends "inicio/encabezado.html" %}
+
+
+{% block titulo %} Quienes {%endblock%}
+
+{% block contenido %}
+{%load static%}
+<body>
+
+
+      <div class="container mb-5 p-5">
+        <div class="bg-faded  text-info">
+            <h1 class="display-4 bg-faded">Quienes somos</h1>
+            <p class="lead text-info">Somos una empresa dedicada a ofrecer servicios de renta de cabañas,
+                contamos ya con muchos años de experiencia en el ramo y que gracias a ello ha comprendido con detalle las necesidades de los viajantes de México y del extranjero.
+            </p> 
+    </div>
+  
+  <div class="row">
+      <div class="col-12 col-sm-6 col-md-6">
+          <h2 class="display-5 text-center"></h2>
+          <hr>
+          <img src="{% static 'inicio/img/quienes1.jpg' %}" class="img-fluid rounded " alt="image">
+          <p class="pt-5">Una cabaña es, por definición, un espacio más habitable cuando se viaja con toda la familia, las habitaciones del hotel 
+              son frías, impersonales y poco agradables para la convivencia con la familia. Es por ello que recomendamos apliamente nuestras cabañas.
+          </p>
+      </div>
+
+
+        <div class="col-4 col-12 col-sm-6 col-md-6">
+          <h2 class="display-5 text-center"></h2>
+          <hr>
+          <img src="{% static 'inicio/img/quienes2.jpg' %}" class="img-fluid rounded " alt="ticss">
+          <p class="pt-5">Estamos firmemente comprometidos con su comodidad, Nuestras cabañas ofrecen excelentes niveles de flexibilidad, puesto que permiten organizar el espacio y 
+              el tiempo de acuerdo a las necesidades del viaje y de los miembros de la familia. </p>
+      </div>
+  </div>
+
+    </div>   
+  </body>
+
+
+{% endblock %}

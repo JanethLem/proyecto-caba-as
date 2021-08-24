@@ -1,0 +1,35 @@
+
+{% block titulo %} RESERVACIONES{%endblock titulo%}
+
+{% block contenido %}
+<!--Tabla alumnos-->
+<div class="contenedor">
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th>Cliente</th>
+			<th>Número de Huespedes</th>
+			<th>Fecha de llegad</th>
+			<th>Fecha de salida</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for reservacion in reservaciones %}
+		<tr>
+			<td class="text-semibold">{{reservacion.cliente}}</td>
+			<td class="text-semibold">{{reservacion.numHu}}</td>
+			<td class="text-semibold">{{reservacion.fllegada}}</td>
+			<td class="text-semibold">{{reservacion.fsalida}}</td>
+			<td class="text-center">
+				<a href="{%url 'ConsultaIndividual' reservacion.id%}">Editar</a>
+			</td>
+			<td class="text-center">
+				<a href="{%url 'Eliminar' reservacion.id%}">Eliminar</a>
+			</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+</div>
+<!--End tabla alumnos-->
+{%endblock%}
