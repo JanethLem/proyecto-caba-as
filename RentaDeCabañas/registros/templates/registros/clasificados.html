@@ -1,0 +1,31 @@
+{% extends "inicio/encabezado.html" %}
+
+
+{% block titulo %} CLASIFICADOS {%endblock titulo%}
+
+{% block contenido %} {%endblock contenido%}
+
+{% block clasificados%}
+{%load static%}
+
+<section class="page-section">
+{% for  promocion in  promociones %}
+    <div class="container">
+        <div class="product-item mb-3">
+            <div class="product-item-title d-flex">
+                <div class="bg-faded p-5 d-flex ms-auto rounded">
+                    <h2 class="section-heading mb-0">
+                        <span class="section-heading-upper">{{promocion.validez}}</span>
+                        <span class="section-heading-lower">{{promocion.nombre}}</span>
+                    </h2>
+                </div>
+            </div>
+            <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{promocion.imagen.url}}" alt="interior1" />
+            <div class="product-item-description d-flex me-auto">
+                <div class="bg-faded p-5 rounded"><p clear=right  class="mb-0"></p>{{promocion.promo}}</p></div>
+            </div>
+        </div>
+    </div>
+{%endfor%}
+</section>
+{% endblock clasificados %}

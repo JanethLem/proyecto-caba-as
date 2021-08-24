@@ -1,0 +1,49 @@
+{% extends "inicio/encabezado.html" %}
+
+{% block titulo %} RESERVACIONES{%endblock titulo%}
+
+{% block contenido %}
+<!-- Formulario -->
+<div class="container mt-5">
+<div class="abs-center">
+    <h1 class="display-4 text-left">Realiza tus Reservaciones</h1>
+<form class="form-horizontal" action="{% url 'Registrar'%}" role="form" method="POST">
+    {%csrf_token%}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="form-group">
+                <label class="col-sm-2 control-label text-left">Cliente:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="cliente">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label text-left">Número de Huésped:</label>
+                <div class="col-sm-6">
+                    <input type="number" minlength="8" class="form-control" name="numHu">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label text-left">Fecha de Entrada:</label>
+                <div class="col-sm-6">
+                    <input type="date" class="form-control" name="fllegada">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label text-left">Fecha de Salida:</label>
+                <div class="col-sm-6">
+                    <input type="date" class="form-control" name="fsalida">
+                </div>
+            </div>
+            <div class="form-actions text-left pl-3">
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+
+<!-- Fin del Formulario -->
+{% endblock contenido%}
+
